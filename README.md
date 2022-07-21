@@ -1,9 +1,72 @@
 # Estrutura básica de ambiente Python com Docker
 
-## Estrutura e arquivos básicos
+## Uso do Terminal
+
+### Lista as informações no diretório
+~~~sh
+ll
+~~~
+
+### Verifica o caminho (*path*) local
+~~~sh
+pwd
+~~~
+
+### Entra em uma pasta com nome <nome da pasta>
+~~~sh
+cd ./<nome da pasta>
+~~~
+
+### Retorna a pasta superior
+~~~sh
+cd ./../
+~~~
+
+### Cria uma nova pasta chamada <nome da pasta>
+~~~sh
+mkdir <nome da pasta>
+~~~
+
+### Remove uma pasta
+~~~sh
+rm -r <nome da pasta>
+~~~
+
+### Cria um arquivo chamado <nome do arquivo>
+~~~sh
+touch <nome do arquivo>
+~~~
+
+### Cria um arquivo chamado <nome do arquivo> e escreve a <mensagem> na primeira linha
+~~~sh
+echo "<mensagem>" > <nome do arquivo>
+~~~
+
+### Cria um arquivo chamado <nome do arquivo> e subescreve a <mensagem> na primeira linha
+~~~sh
+echo "<mensagem>" > <nome do arquivo>
+~~~
+
+### Cria um arquivo chamado <nome do arquivo> e adiciona a <mensagem> na próxima linha
+~~~sh
+echo "<mensagem>" >> <nome do arquivo>
+~~~
+
+### Cria uma cópia do arquivo <nome do arquivo>
+~~~sh
+cp <nome do arquivo> <novo nome do arquivo>
+~~~
+
+### Move o arquivo <nome do arquivo>
+~~~sh
+cp <nome do arquivo> <novo local do arquivo>
+~~~
+
+___
+
+## Estrutura e arquivos
 
 ### Criação inicial da estrutura de diretórios e arquivos
-
 ~~~sh
 mkdir <nome-do-repo>
 cd <nome-do-repo>
@@ -19,16 +82,14 @@ sudo chmod 746 ./config.sh
 touch estrutura_diretorio.txt
 ~~~
 
-### Editando o .gitignore
-
+### Informações do arquivo .gitignore
 ~~~sh
 echo "__pycache__/" >> ./.gitignore
 echo ".ipynb_checkpoints/" >> ./.gitignore
 echo ".pytest_cache/" >> ./.gitignore
 ~~~
 
-### Editando o arquivo docker-compose-app.yml
-
+### Informações do arquivo docker-compose-app.yml
 ~~~yml
 version: "3.7"
 services:
@@ -48,8 +109,7 @@ volumes:
     persistent:
 ~~~
 
-### Editando o arquivo python.Dockerfile
-
+### Informações do arquivo python.Dockerfile
 ~~~Dockerfile
 FROM python:3.7.9
 
@@ -72,8 +132,7 @@ EXPOSE 8888
 CMD ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root"]
 ~~~
 
-### Editando o arquivo python_req.txt
-
+### Informações do arquivo python_req.txt
 ~~~txt
 Flask==2.1.1
 joblib==1.1.0
@@ -92,8 +151,7 @@ tensorflow==2.4.1
 util-gfsilveira==0.1
 ~~~
 
-### Editando o arquivo config.sh
-
+### Informações do arquivo config.sh
 ~~~sh
 #!/bin/bash
 
@@ -114,10 +172,9 @@ sudo docker-compose -f ./docker/docker-compose-app.yml up
 
 ___
 
-## Git -> comandos básico
+## Git -> comandos básicos
 
 ### Uma vez inicia o repositório remoto, vincular a pasta local ao repositório remoto
-
 ~~~sh
 git init
 git add .
@@ -128,43 +185,36 @@ git push -u origin main
 ~~~
 
 ### Obter as últimas informações do repositório **REALIZAR NO INÍCIO DAS ATIVIDADES**
-
 ~~~sh
 git pull
 ~~~
 
 ### Adicionar as modificações para serem enviadas (*commitadas*)
-
 ~~~sh
 git add .
 ~~~
 
 ### Registrando o envio (*commit*) das informações
-
 ~~~sh
 git commit -m "Mensagem de explicação do motivo das modificações"
 ~~~
 
 ### Enviaando as informações para o repositório remoto
-
 ~~~sh
 git push -u origin main
 ~~~
 
 ### Obtendo informações sobre os commites
-
 ~~~sh
 git status
 ~~~
 
 ### Clonar o repositorio do GitHub
-
 ~~~sh
 git clone https://github.com/Laboratorio-de-Analise-de-Dados/env-docker.git
 ~~~
 
 ### Criar uma nova branch
-
 ~~~sh
 git checkout -b <branch>
 ~~~
@@ -186,61 +236,51 @@ ___
 ## Docker -> comandos básicos
 
 ### Subindo o ambiente com o docker-compose
-
 ~~~sh
 docker-compose -f ./docker/docker-compose-app.yml up
 ~~~
 
 ### Removendo o ambiente com o docker-compose
-
 ~~~sh
 docker-compose -f ./docker/docker-compose-app.yml down
 ~~~
 
 ### Finalizando conteiner do JupyterLab
-
 ~~~sh
 Ctrl+c
 ~~~
 
 ### Parar o ambiente
-
 ~~~sh
 docker stop env-docker
 ~~~
 
 ### Reiniciar o ambiente
-
 ~~~sh
 docker restart env-docker
 ~~~
 
 ### Iniciando o ambiente
-
 ~~~sh
 docker start env-docker
 ~~~
 
 ### Resgatar a informação do link de acesso ao JupyterLab
-
 ~~~sh
 docker logs env-docker
 ~~~
 
 ### Acessando os containers em execussão
-
 ~~~sh
 docker ps
 ~~~
 
 ### Acessando todos os containers
-
 ~~~sh
 docker ps -a
 ~~~
 
 ### Acessando as imagens locais
-
 ~~~sh
 docker images
 ~~~
