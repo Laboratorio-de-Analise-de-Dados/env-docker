@@ -1,0 +1,11 @@
+.
+├── README.md
+├── config.sh
+├── docker
+│   ├── docker-compose-app.yml
+│   ├── python.Dockerfile
+│   └── python_req.txt
+├── estrutura_diretorio.txt
+└── script
+
+2 directories, 6 files
