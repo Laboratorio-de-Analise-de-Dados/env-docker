@@ -12,7 +12,7 @@ ll
 pwd
 ~~~
 
-### Entra em uma pasta com nome <nome da pasta>
+### Entra em uma pasta com nome "<nome da pasta>"
 ~~~sh
 cd ./<nome da pasta>
 ~~~
