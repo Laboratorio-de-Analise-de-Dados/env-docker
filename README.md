@@ -192,18 +192,21 @@ docker images
 ~~~
 
 ### Deletar todas as informações do Docker
-
-<font color="read">Deletar containers</font>
+~~~diff
+- Deletar containers
+~~~
 ~~~sh
 docker rm -f $(docker ps -a -q)
 ~~~
-
-<font color="read">Deletar imagens</font>
+~~~diff
+- Deletar imagens
+~~~
 ~~~sh
 docker rmi -f $(docker images -q)
 ~~~
-
-<font color="read">Deletar volumes</font>
+~~~diff
+- Deletar volumes
+~~~
 ~~~sh
 docker system prune -f -a --volumes
 ~~~
