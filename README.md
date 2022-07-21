@@ -112,6 +112,8 @@ sudo apt-get install -y docker-compose
 sudo docker-compose -f ./docker/docker-compose-app.yml up
 ~~~
 
+---
+
 ## Git -> comandos básico
 
 ### Uma vez inicia o repositório remoto, vincular a pasta local ao repositório remoto
@@ -124,6 +126,8 @@ git branch -M "main"
 git remote add origin https://github.com/Laboratorio-de-Analise-de-Dados/env-docker.git
 git push -u origin "main"
 ~~~
+
+---
 
 ## Docker -> comandos básicos
 
@@ -189,17 +193,17 @@ docker images
 
 ### Deletar todas as informações do Docker
 
-<font font-color="red">Deletar containers</font>
+!Deletar containers
 ~~~sh
 docker rm -f $(docker ps -a -q)
 ~~~
 
-<font font-color="red">Deletar imagens</font>
+!Deletar imagens
 ~~~sh
 docker rmi -f $(docker images -q)
 ~~~
 
-<font font-color="red">Deletar volumes</font>
+!Deletar volumes
 ~~~sh
 docker system prune -f -a --volumes
 ~~~
