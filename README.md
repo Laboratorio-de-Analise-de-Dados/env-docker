@@ -112,7 +112,7 @@ sudo apt-get install -y docker-compose
 sudo docker-compose -f ./docker/docker-compose-app.yml up
 ~~~
 
----
+___
 
 ## Git -> comandos básico
 
@@ -127,7 +127,7 @@ git remote add origin https://github.com/Laboratorio-de-Analise-de-Dados/env-doc
 git push -u origin "main"
 ~~~
 
----
+___
 
 ## Docker -> comandos básicos
 
@@ -193,17 +193,17 @@ docker images
 
 ### Deletar todas as informações do Docker
 
-!Deletar containers
+<font color="read">Deletar containers</font>
 ~~~sh
 docker rm -f $(docker ps -a -q)
 ~~~
 
-!Deletar imagens
+<font color="read">Deletar imagens</font>
 ~~~sh
 docker rmi -f $(docker images -q)
 ~~~
 
-!Deletar volumes
+<font color="read">Deletar volumes</font>
 ~~~sh
 docker system prune -f -a --volumes
 ~~~
