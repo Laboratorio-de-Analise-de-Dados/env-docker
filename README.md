@@ -231,6 +231,26 @@ git branch --set-upstream-to=origin/<branch> <branch>
 git pull
 ~~~
 
+### Retorna ao último cmomit sem enviar as alterações
+~~~sh
+git stash
+~~~
+
+### Retornando um commit
+~~~sh
+git revert <id_do_commit>
+~~~
+
+### Diferença entre dois commites
+~~~sh
+git diff <id_do_commit_inic>..<id_do_commit_final>
+~~~
+
+### Adicionar uma tag
+~~~sh
+git tag -a <nome_da_tag> -m "<mensagem>"
+~~~
+
 ___
 
 ## Docker -> comandos básicos
