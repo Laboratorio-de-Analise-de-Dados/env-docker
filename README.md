@@ -12,7 +12,7 @@ ll
 pwd
 ~~~
 
-### Entra em uma pasta com nome "<nome da pasta>"
+### Entra em uma pasta com nome *nome da pasta*
 ~~~sh
 cd ./<nome da pasta>
 ~~~
@@ -22,7 +22,7 @@ cd ./<nome da pasta>
 cd ./../
 ~~~
 
-### Cria uma nova pasta chamada <nome da pasta>
+### Cria uma nova pasta chamada *nome da pasta*
 ~~~sh
 mkdir <nome da pasta>
 ~~~
@@ -32,32 +32,32 @@ mkdir <nome da pasta>
 rm -r <nome da pasta>
 ~~~
 
-### Cria um arquivo chamado <nome do arquivo>
+### Cria um arquivo chamado *nome do arquivo*
 ~~~sh
 touch <nome do arquivo>
 ~~~
 
-### Cria um arquivo chamado <nome do arquivo> e escreve a <mensagem> na primeira linha
+### Cria um arquivo chamado *nome do arquivo* e escreve a *mensagem* na primeira linha
 ~~~sh
 echo "<mensagem>" > <nome do arquivo>
 ~~~
 
-### Cria um arquivo chamado <nome do arquivo> e subescreve a <mensagem> na primeira linha
+### Cria um arquivo chamado *nome do arquivo* e subescreve a *mensagem* na primeira linha
 ~~~sh
 echo "<mensagem>" > <nome do arquivo>
 ~~~
 
-### Cria um arquivo chamado <nome do arquivo> e adiciona a <mensagem> na próxima linha
+### Cria um arquivo chamado *nome do arquivo* e adiciona a *mensagem* na próxima linha
 ~~~sh
 echo "<mensagem>" >> <nome do arquivo>
 ~~~
 
-### Cria uma cópia do arquivo <nome do arquivo>
+### Cria uma cópia do arquivo *nome do arquivo*
 ~~~sh
 cp <nome do arquivo> <novo nome do arquivo>
 ~~~
 
-### Move o arquivo <nome do arquivo>
+### Move o arquivo *nome do arquivo*
 ~~~sh
 cp <nome do arquivo> <novo local do arquivo>
 ~~~
