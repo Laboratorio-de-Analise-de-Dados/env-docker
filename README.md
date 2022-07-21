@@ -122,9 +122,63 @@ ___
 git init
 git add .
 git commit -m "First commit"
-git branch -M "main"
+git branch -M main
 git remote add origin https://github.com/Laboratorio-de-Analise-de-Dados/env-docker.git
-git push -u origin "main"
+git push -u origin main
+~~~
+
+### Obter as últimas informações do repositório **REALIZAR NO INÍCIO DAS ATIVIDADES**
+
+~~~sh
+git pull
+~~~
+
+### Adicionar as modificações para serem enviadas (*commitadas*)
+
+~~~sh
+git add .
+~~~
+
+### Registrando o envio (*commit*) das informações
+
+~~~sh
+git commit -m "Mensagem de explicação do motivo das modificações"
+~~~
+
+### Enviaando as informações para o repositório remoto
+
+~~~sh
+git push -u origin main
+~~~
+
+### Obtendo informações sobre os commites
+
+~~~sh
+git status
+~~~
+
+### Clonar o repositorio do GitHub
+
+~~~sh
+git clone https://github.com/Laboratorio-de-Analise-de-Dados/env-docker.git
+~~~
+
+### Criar uma nova branch
+
+~~~sh
+git checkout -b <branch>
+~~~
+
+### Envia a nova brnach para o GitHub
+~~~sh
+git push --set-upstream origin <branch>
+~~~
+
+### Acessa a nova branch
+~~~sh
+git checkout -b <branch>
+git branch --set-upstream-to=origin/<branch> <branch>
+git pull
 ~~~
 
 ___
@@ -192,27 +246,21 @@ docker images
 ~~~
 
 ### Deletar todas as informações do Docker
-
-<span style="color:orange;">Deletar containers</span>
-
+~~~diff
+- Deletar containers
+~~~
 ~~~sh
 docker rm -f $(docker ps -a -q)
 ~~~
-
-<span style="color:orange;">Deletar imagens</span>
-
+~~~diff
+- Deletar imagens
+~~~
 ~~~sh
 docker rmi -f $(docker images -q)
 ~~~
-
-<span style="color:orange;">Deletar volumes</span>
-
+~~~diff
+- Deletar volumes
+~~~
 ~~~sh
 docker system prune -f -a --volumes
-~~~
-
-### 
-
-~~~sh
-
 ~~~
