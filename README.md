@@ -270,6 +270,16 @@ docker start env-docker
 docker logs env-docker
 ~~~
 
+### Entra no container
+~~~sh
+docker exec -it env-docker /bin/bash
+~~~
+
+### Roda um arquivo python no container chamado *nome do arquivo*
+~~~sh
+docker exec env-docker python ./<nome do arquivo>
+~~~
+
 ### Acessando os containers em execussão
 ~~~sh
 docker ps
