@@ -64,6 +64,34 @@ cp <nome do arquivo> <novo local do arquivo>
 
 ___
 
+## Uso do terminal com SSH
+
+### Conexão *local->servidor*
+
+~~~sh
+ssh -i <local da chave> usuario@ip_servidor
+~~~
+
+### Enviando comando do *local->servidor*
+
+~~~sh
+ssh -i <local da chave> usuario@ip_servidor <comando>
+~~~
+
+## Enviar pasta do *local->servidor*
+
+~~~sh
+scp -i <local da chave> -r <local com o nome da pasta> usuario@ip_servidor:<local da pasta>
+~~~
+
+## Enviar pasta do *servidor->local*
+
+~~~sh
+scp -i <local da chave> -r usuario@ip_servidor:<local com o nome da pasta> <local da pasta>
+~~~
+
+___
+
 ## Estrutura e arquivos
 
 ### Criação inicial da estrutura de diretórios e arquivos
