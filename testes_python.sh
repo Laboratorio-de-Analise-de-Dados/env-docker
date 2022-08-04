@@ -4,18 +4,18 @@ echo "__________________________________________________________________"
 echo "                              PyTest                              "
 echo "__________________________________________________________________"
 
-sudo docker exec teste-python pytest ./$1/py_test
+sudo docker exec env-docker pytest ./$1/py_test
 
 echo "__________________________________________________________________"
 echo "                              MyPy                              "
 echo "__________________________________________________________________"
 
-sudo docker exec teste-python mypy ./$1
+sudo docker exec env-docker mypy ./$1
 
 echo "__________________________________________________________________"
 echo "                              Flake8                              "
 echo "__________________________________________________________________"
 
-sudo docker exec teste-python flake8 ./$1
+sudo docker exec env-docker flake8 ./$1
 
 echo "______________________________FOI______________________________"

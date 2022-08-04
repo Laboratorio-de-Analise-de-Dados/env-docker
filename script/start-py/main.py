@@ -1,5 +1,6 @@
 from src.inicio import Inicio
 
+
 def teste_inicio() -> str:
     teste_entrada = True
     iniciando = Inicio(teste_entrada)
@@ -7,10 +8,9 @@ def teste_inicio() -> str:
 
     if teste_saida:
         return "Sistema funcionando"
-    
+
     return "Sistema não está funcionando"
 
 
 if __name__ == "__main__":
     print(teste_inicio())
-    

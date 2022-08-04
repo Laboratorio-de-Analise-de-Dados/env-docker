@@ -1,5 +1,6 @@
 from src.inicio import Inicio
 
+
 def test_iniciando_sistema():
     # Given
     teste_entrada = True
@@ -9,4 +10,3 @@ def test_iniciando_sistema():
 
     # Then
     assert teste_entrada == teste_saida
-    
