@@ -16,7 +16,7 @@ def teste_inicio() -> str:
 if __name__ == "__main__":
     # print(teste_inicio())
 
-    maquina = "t3.medium"
+    maquina = "t3.large"
 
     for _ in range(1_000):
         teste = TestadorVelocidade(n=1_000)
