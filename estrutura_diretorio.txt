@@ -28,7 +28,9 @@
 │       │   ├── t2.small-1000.txt
 │       │   ├── t2.small-1000000.txt
 │       │   ├── t2.xlarge-1000.txt
-│       │   └── t2.xlarge-1000000.txt
+│       │   ├── t2.xlarge-1000000.txt
+│       │   ├── t3.small-1000.txt
+│       │   └── t3.small-1000000.txt
 │       ├── main.py
 │       ├── py_test
 │       │   ├── __init__.py
@@ -43,4 +45,4 @@
 │           └── testador_velocidade.py
 └── testes_python.sh
 
-9 directories, 34 files
+9 directories, 36 files
