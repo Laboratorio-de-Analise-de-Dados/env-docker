@@ -25,12 +25,15 @@
 │       │   │   ├── __init__.cpython-37.pyc
 │       │   │   └── test_inicio.cpython-37-pytest-7.1.2.pyc
 │       │   └── test_inicio.py
-│       └── src
-│           ├── __init__.py
-│           ├── __pycache__
-│           │   ├── __init__.cpython-37.pyc
-│           │   └── inicio.cpython-37.pyc
-│           └── inicio.py
+│       ├── src
+│       │   ├── __init__.py
+│       │   ├── __pycache__
+│       │   │   ├── __init__.cpython-37.pyc
+│       │   │   ├── inicio.cpython-37.pyc
+│       │   │   └── testador_velocidade.cpython-37.pyc
+│       │   ├── inicio.py
+│       │   └── testador_velocidade.py
+│       └── testando_velocidades.txt
 └── testes_python.sh
 
-9 directories, 24 files
+9 directories, 27 files

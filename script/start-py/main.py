@@ -1,6 +1,5 @@
-from time import process_time
-
 from src.inicio import Inicio
+from src.testador_velocidade import TestadorVelocidade
 
 
 def teste_inicio() -> str:
@@ -14,28 +13,9 @@ def teste_inicio() -> str:
     return "Sistema não está funcionando"
 
 
-def teste_de_velocidade(n: int) -> None:
-    # Start the stopwatch / counter
-    t1_start = process_time()
-
-    soma = 0
-    for i in range(n):
-        soma += 1
-
-    print(soma)
-
-    # Stop the stopwatch / counter
-    t1_stop = process_time()
-
-    print("Elapsed time:", t1_stop, "s", t1_start, "s")
-
-    print(
-        "Elapsed time during the whole program in seconds:",
-        t1_stop-t1_start, "s"
-    )
-
-
 if __name__ == "__main__":
     print(teste_inicio())
 
-    teste_de_velocidade(n=100_000_000)
+    for _ in range(1_000):
+        teste = TestadorVelocidade(n=1_000_000)
+        teste.teste_de_velocidade(maquina="t2.2xlarge")
