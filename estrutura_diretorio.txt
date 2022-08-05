@@ -19,6 +19,8 @@
 │   │   └── start-test.ipynb
 │   └── start-py
 │       ├── data
+│       │   ├── t2.large-1000.txt
+│       │   ├── t2.large-1000000.txt
 │       │   ├── t2.medium-1000.txt
 │       │   ├── t2.medium-1000000.txt
 │       │   ├── t2.small-1000.txt
@@ -37,4 +39,4 @@
 │           └── testador_velocidade.py
 └── testes_python.sh
 
-9 directories, 28 files
+9 directories, 30 files
