@@ -16,14 +16,17 @@ class TestadorVelocidade:
         valor_final = f"{valor:_.0f}".replace("_", ".")
         return valor_final
 
-    def __salva_test(self, resultado_teste: str) -> None:
-        arquivo = open("./start-py/testando_velocidades.txt", "a")
-        arquivo.write(resultado_teste+"\n")
+    def __salva_test(
+        self,
+        resultado_teste: float,
+        nome_arquivo: str,
+        numero: int
+    ) -> None:
+        arquivo = open(f"./start-py/data/{nome_arquivo}-{numero}.txt", "a")
+        arquivo.write(str(resultado_teste)+"\n")
         arquivo.close()
 
     def teste_de_velocidade(self, maquina: str) -> None:
-        self.__salva_test(maquina)
-
         # Start the stopwatch / counter
         t1_start = process_time()
 
@@ -32,10 +35,13 @@ class TestadorVelocidade:
         # Stop the stopwatch / counter
         t1_stop = process_time()
 
-        self.__salva_test(processamento)
         print(processamento)
 
-        resultado = f"Var -> {t1_stop - t1_start:.4}s"
-        self.__salva_test(resultado)
+        resultado = t1_stop - t1_start
+
+        self.__salva_test(
+            resultado_teste=resultado,
+            nome_arquivo=maquina,
+            numero=self.__soma()
+        )
         print(resultado)
-        self.__salva_test("------------------------\n")

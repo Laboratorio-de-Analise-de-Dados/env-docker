@@ -17,5 +17,9 @@ if __name__ == "__main__":
     print(teste_inicio())
 
     for _ in range(1_000):
+        teste = TestadorVelocidade(n=1_000)
+        teste.teste_de_velocidade(maquina="t2.small")
+
+    for _ in range(1_000):
         teste = TestadorVelocidade(n=1_000_000)
-        teste.teste_de_velocidade(maquina="t2.2xlarge")
+        teste.teste_de_velocidade(maquina="t2.small")
