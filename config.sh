@@ -12,4 +12,6 @@ tree > estrutura_diretorio.txt
 # Instalando o Docker, o docker-compose, e subindo o ambiente
 curl -fsSL http://get.docker.com | sh
 sudo apt-get install -y docker-compose
-sudo docker-compose -f ./docker/docker-compose-app.yml up
+sudo docker-compose -f ./docker/docker-compose-app.yml up -d
+
+sudo docker exec env-docker python ./start-py/main.py

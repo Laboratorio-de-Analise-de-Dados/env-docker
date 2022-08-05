@@ -14,12 +14,14 @@ def teste_inicio() -> str:
 
 
 if __name__ == "__main__":
-    print(teste_inicio())
+    # print(teste_inicio())
+
+    maquina = "t2.medium"
 
     for _ in range(1_000):
         teste = TestadorVelocidade(n=1_000)
-        teste.teste_de_velocidade(maquina="t2.small")
+        teste.teste_de_velocidade(maquina=maquina)
 
     for _ in range(1_000):
         teste = TestadorVelocidade(n=1_000_000)
-        teste.teste_de_velocidade(maquina="t2.small")
+        teste.teste_de_velocidade(maquina=maquina)
