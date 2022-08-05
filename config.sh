@@ -15,3 +15,5 @@ sudo apt-get install -y docker-compose
 sudo docker-compose -f ./docker/docker-compose-app.yml up -d
 
 sudo docker exec env-docker python ./start-py/main.py
+
+./commit_git.sh "Teste de velocidade t3.medium" main
