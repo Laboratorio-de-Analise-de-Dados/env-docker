@@ -14,14 +14,4 @@ def teste_inicio() -> str:
 
 
 if __name__ == "__main__":
-    # print(teste_inicio())
-
-    maquina = "c3.8xlarge"
-
-    for _ in range(1_000):
-        teste = TestadorVelocidade(n=1_000)
-        teste.teste_de_velocidade(maquina=maquina)
-
-    for _ in range(1_000):
-        teste = TestadorVelocidade(n=1_000_000)
-        teste.teste_de_velocidade(maquina=maquina)
+    print(teste_inicio())
