@@ -1,5 +1,5 @@
 from src.inicio import Inicio
-from src.testador_velocidade import TestadorVelocidade
+# from src.testador_velocidade import TestadorVelocidade
 
 
 def teste_inicio() -> str:
