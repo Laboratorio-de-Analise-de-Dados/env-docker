@@ -1,5 +1,5 @@
 module "aws-prod" {
-  source         = "../../infra"
+  source         = "../infra"
 
   # main.tf
   regiao_aws     = "us-east-1"
