@@ -6,8 +6,8 @@ module "aws-prod" {
 
   # instancia.tf
   ami_id         = "ami-08c40ec9ead489470"
-  instancia      = "t2.medium" # "d3.8xlarge"
-  chave          = "iac-base"
+  instancia      = "t2.medium" # c5.4xlarge d3.8xlarge
+  chave          = "key-docker"
   tamanho_volume = 80
   nome_maquina   = "env-docker"
   instala        = true
