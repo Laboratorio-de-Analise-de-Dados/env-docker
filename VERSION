@@ -16,3 +16,6 @@
 
 # Inserindo módulos de testagem de estílo Flake8 e MyPy no contaínes
 0.2.0
+
+# Inserindo IaC (Infra as a Code) via Terraform
+0.1.0
