@@ -3,9 +3,7 @@ __pycache__/
 .pytest_cache/
 .mypy_cache/
 .terraform*
-iac-dev*
-iac-prod*
-iac-base*
+key-docker*
 *.pem
 *.tfstate
 *.tfstate.*
