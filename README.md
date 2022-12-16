@@ -247,7 +247,7 @@ git clone https://github.com/Laboratorio-de-Analise-de-Dados/env-docker.git
 git checkout -b <branch>
 ~~~
 
-### Envia a nova brnach para o GitHub
+### Envia a nova branch para o GitHub
 ~~~sh
 git push --set-upstream origin <branch>
 ~~~
